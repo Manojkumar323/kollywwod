@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(45, 45, 45);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px -8px #000;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/money\ heist1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000);
+    z-index: -1;
+}
+
+header video {
+    position: absolute;
+    width: 120%;
+    height: 190%;
+    top: -49%;
+    z-index: -1;
+}
+
+header nav {
+    margin-right: 10px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+header .logo img {
+
+    width: 90px;
+    position: relative;
+    margin-left: 50px;
+
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+header nav .logo ul {
+    display: flex;
+
+    list-style: none;
+    padding-left: 20px;
+}
+
+header nav .logo ul li {
+    padding-left: 20px;
+
+}
+
+header nav .logo ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header nav .logo ul li a:hover {
+    color: greenyellow;
+}
+
+nav .inputbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+nav .inputbox input {
+    border-radius: 20px;
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-right: 20px;
+    background-color: #faf8f862;
+
+}
+
+
+/* nav .inputbox i {
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+} */
+
+header nav .inputbox input::placeholder {
+    color: white;
+}
+
+.inputbox img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 70px;
+
+}
+
+header nav .inputbox .searchUser {
+    position: absolute;
+    width: 320px;
+    height: 220px;
+    /* border: 1px solid white; */
+    right: 40px;
+    top: 50px;
+    z-index: 9999;
+    overflow-y: auto;
+    /*over flow auto kututha hide aggum */
+}
+
+
+header nav .inputbox .searchUser::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(255, 255, 255, 1);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+header nav .inputbox .searchUser::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(255, 255, 255, 1);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+header nav .inputbox .searchUser:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+header nav .inputbox .searchUser:hover::-webkit-scrollbar-thumb {
+
+    visibility: visible;
+}
+
+
+
+header nav .inputbox .searchUser .card {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+     display: none; 
+     
+}
+
+header nav .inputbox .searchUser .card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, 1);
+    opacity: 0.2;
+
+
+}
+
+header nav .inputbox .searchUser .card img {
+    width: 30px;
+    border-radius: 0;
+    height: 40px;
+    margin-top: -2px;
+    margin-left: 3px;
+
+}
+
+header nav .inputbox .searchUser .card .content {
+    color: white;
+    position: absolute;
+    margin-left: 50px;
+    
+}
+
+header nav .inputbox .searchUser .card .content h3 {
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+}
+
+header nav .inputbox .searchUser .card .content p {
+    font-size: 10px;
+    color: aliceblue;
+
+}
+
+header nav .inputbox .searchUser .card .content p span {
+    margin-left: 5px;
+    background-color: yellow;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+
+}
+
+
+.details {
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.details h1 {
+    font-size: 60px;
+}
+
+.details p {
+    font-size: 11px;
+    width: 350px;
+    word-break: break-all;
+    margin-top: 10px;
+}
+
+.details .deatails {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.details .deatails h6 {
+    color: rgb(255, 255, 255, );
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.details .deatails h5 {
+    color: greenyellow;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.details .deatails h4 {
+    margin-right: 10px;
+    font-size: 10px;
+    color: white;
+}
+
+.details .deatails h3 {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+}
+
+.details .deatails h3 span {
+    background: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.details .deatails h3 span i {
+    font-size: 5px;
+    margin-right: 8px;
+}
+
+.btns {
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btns a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: aliceblue;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00bdff, #0079ff);
+    border-radius: 5px;
+    margin-left: 10px;
+    animation: button 1s linear infinite;
+
+}
+
+.btns a i {
+    padding-left: 10px;
+}
+
+
+@keyframes button {
+    0% {
+        background: linear-gradient(0deg, #00bdff, #0079ff);
+    }
+
+    12% {
+        background: linear-gradient(45deg, #00bdff, #0079ff);
+    }
+
+    24% {
+        background: linear-gradient(95deg, #00bdff, #0079ff);
+    }
+
+    36% {
+        background: linear-gradient(145deg, #00bdff, #0079ff);
+    }
+
+    48% {
+        background: linear-gradient(195deg, #00bdff, #0079ff);
+    }
+
+    60% {
+        background: linear-gradient(245deg, #00bdff, #0079ff);
+    }
+
+    72% {
+        background: linear-gradient(295deg, #00bdff, #0079ff);
+    }
+
+    100% {
+        background: linear-gradient(360deg, #00bdff, #0079ff);
+    }
+
+
+}
+
+
+
+header section {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: white;
+}
+
+header section .cards1 {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+header section .cards1::-webkit-scrollbar {
+    display: none;
+}
+
+header section .cards1 .card1 {
+    position: relative;
+    min-width: 130px;
+    height: 180px;
+    /* border: 1px solid white; */
+    background-color: #000;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.3s linear;
+}
+
+header section .cards1 .card1 .poster {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+header section .cards1 .card1:hover {
+    min-width: 300px;
+    overflow: hidden;
+
+}
+
+header section .cards1 .card1 .rest-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    transition: 1s linear;
+
+}
+
+header section .cards1 .card1 .rest-card img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+header section .cards1 .card1 .rest-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+header section .cards1 .card1 .rest-card .cont {
+    width: 100%;
+    bottom: 10px;
+    position: absolute;
+    color: white;
+    padding: 0px 20px;
+}
+
+header section .cards1 .card1 .rest-card .cont .sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section .cards1 .card1 .rest-card .cont .sub p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(255, 255, 255, );
+}
+
+header section .cards1 .card1 .rest-card .cont .sub h3 {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+header section .cards1 .card1 .rest-card .cont .sub h3 span {
+    background: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+header section .cards1 .card1 .rest-card:hover {
+    opacity: 1;
+}
+
+header section #aright {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 25px;
+    height: 25px;
+    /* background: rgb(255,255, 255); */
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    z-index: 99999999999999;
+    opacity: 0;
+
+}
+
+header section #aright {
+    left: unset;
+    right: 3%;
+
+}
+
+header section:hover #aright {
+    opacity: 1;
+}
+
+header section #aleft {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 25px;
+    height: 25px;
+    /* background: rgb(255,255, 255); */
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    z-index: 99999999999999;
+    opacity: 0;
+
+}
+
+header section #aleft {
+    left: unset;
+    left: 3%;
+
+}
+
+header section:hover #aleft {
+    opacity: 1;
+}
+
